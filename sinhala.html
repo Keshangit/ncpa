@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NCPA Contacts</title>
+<style>
+    /* Scope everything to #ncpa-contacts to avoid Elementor/global conflicts */
+    
+    #ncpa-contacts { --bg:#f8f8fb; --card:#fff; --text:#1c1c27; --muted:#6b6b80; --line:#e6e6ef; --accent:#3a63ff; --accent2:#12b886; --radius:16px; }
+    #ncpa-contacts .wrap{max-width:980px;margin:24px auto;padding:16px;background:var(--bg);}
+    #ncpa-contacts .title{font-size:20px;margin:0 0 14px;color:var(--text);}
+    #ncpa-contacts .grid{display:grid;grid-template-columns:1fr;gap:12px}
+    @media (min-width:560px){#ncpa-contacts .grid{grid-template-columns:1fr 1fr}}
+    @media (min-width:920px){#ncpa-contacts .grid{grid-template-columns:1fr 1fr 1fr}}
+    #ncpa-contacts .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px;display:flex;flex-direction:column;gap:10px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+    #ncpa-contacts .row-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+    #ncpa-contacts .idx{min-width:28px;height:28px;border-radius:999px;background:#eef0ff;color:var(--accent);display:inline-flex;align-items:center;justify-content:center;font-weight:600;font-size:13px}
+    #ncpa-contacts .name{font-weight:700;font-size:16px;margin:0;color:var(--text)}
+    #ncpa-contacts .designation,#ncpa-contacts .district{font-size:13px;color:var(--muted);margin:0}
+    #ncpa-contacts .meta{display:grid;grid-template-columns:1fr;gap:6px;padding-top:4px;border-top:1px dashed var(--line)}
+    #ncpa-contacts .meta div{font-size:13px;display:flex;gap:6px;align-items:center;word-break:break-word}
+    #ncpa-contacts .label{color:var(--muted);min-width:84px}
+    #ncpa-contacts .actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:4px}
+    #ncpa-contacts .btn{border:1px solid var(--line);background:var(--card);padding:10px 12px;border-radius:12px;text-align:center;font-weight:600;font-size:14px;text-decoration:none;transition:transform .02s ease;display:inline-block}
+    #ncpa-contacts .btn:active{transform:translateY(1px)}
+    #ncpa-contacts .btn.call{border-color:rgba(18,184,134,.25);background:rgba(18,184,134,.06);color:var(--accent2)}
+    #ncpa-contacts .btn.email{border-color:rgba(58,99,255,.25);background:rgba(58,99,255,.06);color:var(--accent)}
+    #ncpa-contacts .btn[aria-disabled="true"]{color:#c9c9d6;border-color:var(--line);background:#f4f4f8;pointer-events:none}
+    #ncpa-contacts .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+</head>
+<body>
+<!-- Childline CTA Section -->
+<section id="ncpa-childline" aria-label="Childline of NCPA">
+  <div class="childline-box" style="background:#0a3d91; color:#fff; text-align:center; padding:30px 20px; border-radius:8px;">
+    <div style="font-size:48px; font-weight:bold; margin-bottom:5px;">1929</div>
+    <div style="font-size:18px;">Childline of National Child Protection Authority</div>
+  </div>
+</section>
+
+<!-- Address Section -->
+<section id="ncpa-address" aria-label="NCPA Address">
+  <div class="address-box" style="text-align:center; margin-top:20px; margin-bottom:20px;">
+    <p style="margin:0; font-size:16px; line-height:1.5;">
+      <strong>National Child Protection Authority</strong><br>
+      No. 330, Thalawathugoda Road<br>
+      Madiwela<br>
+      Sri Lanka
+    </p>
+  </div>
+</section>
+<!-- Source Note -->
+<section id="ncpa-note">
+  <p style="text-align:center; font-size:14px; color:#666; margin:10px 0;">
+    ශ්‍රී ලංකා ජාතික ළමා ආරක්ෂක අධිකාරියේ නිල වෙබ් අඩවියෙන් උපුටා ගන්නා ලදී. 
+  </p>
+</section>
+<!-- Paste this whole block into an Elementor HTML widget -->
+<section id="ncpa-contacts" aria-label="Child Protection Contacts">
+  
+
+  <div class="wrap">
+    <h2 class="title">Colombo District & Divisional Child Protection Contacts</h2>
+    <div class="grid">
+
+      <!-- 1 -->
+      <article class="card">
+        <div class="row-top">
+          <span class="idx">1</span>
+          <h3 class="name">Mr. W. M. Janith Weerakoon</h3>
+        </div>
+        <p class="designation">District Child Protection Officer</p>
+        <p class="district">Colombo</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>071-4328269</span></div>
+          <div><span class="label">Email</span><span>janith123@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call"  href="tel:+94714328269" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:janith123@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card">
+        <div class="row-top">
+          <span class="idx">2</span>
+          <h3 class="name">Mr. S. K. D. Ranjith</h3>
+        </div>
+        <p class="designation">District Psychosocial Officer</p>
+        <p class="district">Colombo</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905002</span></div>
+          <div><span class="label">Email</span><span>cmb.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call"  href="tel:+94769905002" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:cmb.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card">
+        <div class="row-top">
+          <span class="idx">3</span>
+          <h3 class="name">Ms. L. K. O. Karadana</h3>
+        </div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Colombo</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905039</span></div>
+          <div><span class="label">Email</span><span>colombo.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call"  href="tel:+94769905039" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:colombo.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card">
+        <div class="row-top">
+          <span class="idx">4</span>
+          <h3 class="name">Mrs. Nimali Ekanayake</h3>
+        </div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Dehiwala</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905149</span></div>
+          <div><span class="label">Email</span><span>nimaliekanayaka37@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call"  href="tel:+94769905149" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:nimaliekanayaka37@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="card">
+        <div class="row-top">
+          <span class="idx">5</span>
+          <h3 class="name">Mrs. Nimali Ekanayake</h3>
+        </div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Homagama</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905149</span></div>
+          <div><span class="label">Email</span><span>nimaliekanayaka37@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call"  href="tel:+94769905149" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:nimaliekanayaka37@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="card">
+        <div class="row-top">
+          <span class="idx">6</span>
+          <h3 class="name">Mrs. D. M. Kanchana</h3>
+        </div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Kaduwela</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905105</span></div>
+          <div><span class="label">Email</span><span>kaduwela.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call"  href="tel:+94769905105" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:kaduwela.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="card">
+        <div class="row-top">
+          <span class="idx">7</span>
+          <h3 class="name">Ms. H. L. A. Lunuwila</h3>
+        </div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Kesbewa</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905043</span></div>
+          <div><span class="label">Email</span><span>amanilunuwila@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call"  href="tel:+94769905043" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:amanilunuwila@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="card">
+        <div class="row-top">
+          <span class="idx">8</span>
+          <h3 class="name">Mrs. Sajeewi Wickramadara</h3>
+        </div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Kolonnawa</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905041</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905041" rel="nofollow">Call</a>
+          <span class="btn email" aria-disabled="true" title="Email not available">Email</span>
+        </div>
+      </article>
+
+      <!-- 9 -->
+      <article class="card">
+        <div class="row-top">
+          <span class="idx">9</span>
+          <h3 class="name">Mr. Sandun Indika Perera</h3>
+        </div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Maharagama</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905037</span></div>
+          <div><span class="label">Email</span><span>maharagama7.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call"  href="tel:+94769905037" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:maharagama7.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="card">
+        <div class="row-top">
+          <span class="idx">10</span>
+          <h3 class="name">Mr. M. U. Pannilagamage</h3>
+        </div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Moratuwa</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905038</span></div>
+          <div><span class="label">Email</span><span>moratuwa.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call"  href="tel:+94769905038" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:moratuwa.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 11 -->
+      <article class="card">
+        <div class="row-top">
+          <span class="idx">11</span>
+          <h3 class="name">Mrs. G. S. N. Guluwita</h3>
+        </div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Padukka</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905106</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905106" rel="nofollow">Call</a>
+          <span class="btn email" aria-disabled="true" title="Email not available">Email</span>
+        </div>
+      </article>
+
+      <!-- 12 -->
+      <article class="card">
+        <div class="row-top">
+          <span class="idx">12</span>
+          <h3 class="name">Mr. J. D. Iruka Ravindra</h3>
+        </div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Rathmalana</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905036</span></div>
+          <div><span class="label">Email</span><span>ratmalana.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call"  href="tel:+94769905036" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:ratmalana.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 13 -->
+      <article class="card">
+        <div class="row-top">
+          <span class="idx">13</span>
+          <h3 class="name">Ms. M. M. B. Y. Nawarathne</h3>
+        </div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Seethawaka</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905042</span></div>
+          <div><span class="label">Email</span><span>seethawaka.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call"  href="tel:+94769905042" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:seethawaka.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 14 -->
+      <article class="card">
+        <div class="row-top">
+          <span class="idx">14</span>
+          <h3 class="name">Mrs. Sajeewi Wickramadara</h3>
+        </div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Sri Jayewardenepura</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905041</span></div>
+          <div><span class="label">Email</span><span>srijayawardanapura.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call"  href="tel:+94769905041" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:srijayawardanapura.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 15 -->
+      <article class="card">
+        <div class="row-top">
+          <span class="idx">15</span>
+          <h3 class="name">Mr. M. U. Pannilagamage</h3>
+        </div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Thibirigasyaya</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905038</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905038" rel="nofollow">Call</a>
+          <span class="btn email" aria-disabled="true" title="Email not available">Email</span>
+        </div>
+      </article>
+
+    </div>
+    <p class="sr-only">Tap Call to dial or Email to compose a message.</p>
+  </div>
+  <div class="wrap">
+    <h2 class="title">Kalutara District & Divisional Child Protection Contacts</h2>
+    <div class="grid">
+
+      <!-- 1 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">1</span><h3 class="name">Ms. Nilmini Wickrama</h3></div>
+        <p class="designation">District Child Protection Officer</p>
+        <p class="district">Kalutara</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905005</span></div>
+          <div><span class="label">Email</span><span>kalutara.dcpo.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905005" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:kalutara.dcpo.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">2</span><h3 class="name">Mrs. M. V. M. Edirisinghe</h3></div>
+        <p class="designation">District Psychosocial Officer</p>
+        <p class="district">Kalutara</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905006</span></div>
+          <div><span class="label">Email</span><span>kaluthara.dpso.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905006" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:kaluthara.dpso.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">3</span><h3 class="name">—</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Agalawaththa</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>Not available</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <span class="btn call" aria-disabled="true">Call</span>
+          <span class="btn email" aria-disabled="true">Email</span>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">4</span><h3 class="name">—</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Bandaragama</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>Not available</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <span class="btn call" aria-disabled="true">Call</span>
+          <span class="btn email" aria-disabled="true">Email</span>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">5</span><h3 class="name">Mrs. L. G. D. M. Anjalee</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Beruwala</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905063</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905063" rel="nofollow">Call</a>
+          <span class="btn email" aria-disabled="true">Email</span>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">6</span><h3 class="name">Mrs. W. Tharanga Dilhani</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Bulathsinghala</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905061</span></div>
+          <div><span class="label">Email</span><span>bulathsinhala.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905061" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:bulathsinhala.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">7</span><h3 class="name">Ms. Nilmini Wickrama</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Dodangoda</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>Not available</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <span class="btn call" aria-disabled="true">Call</span>
+          <span class="btn email" aria-disabled="true">Email</span>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">8</span><h3 class="name">Mrs. G. S. N. Gulavita</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Horana</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905059</span></div>
+          <div><span class="label">Email</span><span>horana.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905059" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:horana.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 9 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">9</span><h3 class="name">Mrs. K. G. N. N. Wijesinghe</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Ingiriya</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905297</span></div>
+          <div><span class="label">Email</span><span>ingiriya.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905297" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:ingiriya.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">10</span><h3 class="name">Mrs. W. T. S. Silva</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Kalutara</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905058</span></div>
+          <div><span class="label">Email</span><span>kalutara.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905058" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:kalutara.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 11 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">11</span><h3 class="name">Mr. H. K. S. Niranjana</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Madurawala</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>070-7387050</span></div>
+          <div><span class="label">Email</span><span>sangeethniranjana25@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94707387050" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:sangeethniranjana25@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 12 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">12</span><h3 class="name">Mr. K. P. K. Dharshana</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Mathugama</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905078</span></div>
+          <div><span class="label">Email</span><span>mathugama.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905078" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:mathugama.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 13 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">13</span><h3 class="name">Mr. H. K. S. Niranajana</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Millaniya</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>070-7387050</span></div>
+          <div><span class="label">Email</span><span>sangeethniranjana25@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94707387050" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:sangeethniranjana25@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 14 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">14</span><h3 class="name">—</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Palindanuwara</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>Not available</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <span class="btn call" aria-disabled="true">Call</span>
+          <span class="btn email" aria-disabled="true">Email</span>
+        </div>
+      </article>
+
+      <!-- 15 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">15</span><h3 class="name">Mrs. R. M. G. U. Rahnayake</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Panadura</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905058</span></div>
+          <div><span class="label">Email</span><span>panadura.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905058" rel="nofollow">Call</a>
+          <a class="btn email" href="mailto:panadura.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 16 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">16</span><h3 class="name">—</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Walallavita</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>Not available</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <span class="btn call" aria-disabled="true">Call</span>
+          <span class="btn email" aria-disabled="true">Email</span>
+        </div>
+      </article>
+
+    </div>
+    <p class="sr-only">Tap Call to dial or Email to compose a message.</p>
+  </div>
+    <div class="wrap">
+    <h2 class="title">Gampaha District & Divisional Child Protection Contacts</h2>
+    <div class="grid">
+
+      <!-- 1 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">1</span><h3 class="name">Mr. Indika Jayawardhana</h3></div>
+        <p class="designation">District Child Protection Officer</p>
+        <p class="district">Gampaha</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905001</span></div>
+          <div><span class="label">Email</span><span>gampaha.dcpo.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905001">Call</a>
+          <a class="btn email" href="mailto:gampaha.dcpo.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">2</span><h3 class="name">Mrs. Udeni Pushpakanthi</h3></div>
+        <p class="designation">District Psychosocial Officer</p>
+        <p class="district">Gampaha</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905004</span></div>
+          <div><span class="label">Email</span><span>gampaha.dpso.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905004">Call</a>
+          <a class="btn email" href="mailto:gampaha.dpso.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">3</span><h3 class="name">Mrs. K. T. D. Perera</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Aththanagalla</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905056</span></div>
+          <div><span class="label">Email</span><span>aththanagalla.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905056">Call</a>
+          <a class="btn email" href="mailto:aththanagalla.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">4</span><h3 class="name">Mrs. A. K. D. S. Aththanagoda</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Biyagama</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905047</span></div>
+          <div><span class="label">Email</span><span>biyagamancpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905047">Call</a>
+          <a class="btn email" href="mailto:biyagamancpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">5</span><h3 class="name">Mrs. I. K. D. Chathurangani</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Divulapitiya</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905048</span></div>
+          <div><span class="label">Email</span><span>divulapitiya.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905048">Call</a>
+          <a class="btn email" href="mailto:divulapitiya.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">6</span><h3 class="name">Mrs. W. A. P. U. Wijayalath</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Dompe</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905045</span></div>
+          <div><span class="label">Email</span><span>dompe.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905045">Call</a>
+          <a class="btn email" href="mailto:dompe.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">7</span><h3 class="name">Mrs. T. M. U. Pushpakanthi</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Gampaha</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>Not available</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <span class="btn call" aria-disabled="true">Call</span>
+          <span class="btn email" aria-disabled="true">Email</span>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">8</span><h3 class="name">Mrs. R. W. Sandamali</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Ja-Ela</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905051</span></div>
+          <div><span class="label">Email</span><span>Jaela1.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905051">Call</a>
+          <a class="btn email" href="mailto:Jaela1.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 9 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">9</span><h3 class="name">Mr. K. G. A. B. Senevirathne</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Katana</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905046</span></div>
+          <div><span class="label">Email</span><span>ncpaasankakatana@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905046">Call</a>
+          <a class="btn email" href="mailto:ncpaasankakatana@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">10</span><h3 class="name">Mrs. N. K. Liyanage</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Kelaniya</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905053</span></div>
+          <div><span class="label">Email</span><span>kelaniya.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905053">Call</a>
+          <a class="btn email" href="mailto:kelaniya.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 11 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">11</span><h3 class="name">Mrs. W. A. N. P. Kumari</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Mahara</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905044</span></div>
+          <div><span class="label">Email</span><span>mahara.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905044">Call</a>
+          <a class="btn email" href="mailto:mahara.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 12 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">12</span><h3 class="name">—</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Meerigama</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>Not available</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <span class="btn call" aria-disabled="true">Call</span>
+          <span class="btn email" aria-disabled="true">Email</span>
+        </div>
+      </article>
+
+      <!-- 13 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">13</span><h3 class="name">—</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Minuwangoda</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>Not available</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <span class="btn call" aria-disabled="true">Call</span>
+          <span class="btn email" aria-disabled="true">Email</span>
+        </div>
+      </article>
+
+      <!-- 14 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">14</span><h3 class="name">—</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Negombo</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>Not available</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <span class="btn call" aria-disabled="true">Call</span>
+          <span class="btn email" aria-disabled="true">Email</span>
+        </div>
+      </article>
+
+      <!-- 15 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">15</span><h3 class="name">Mrs. T. F. Wattegedara</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Wattala</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>077-4272783</span></div>
+          <div><span class="label">Email</span><span>wattala.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94774272783">Call</a>
+          <a class="btn email" href="mailto:wattala.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+    <div class="wrap">
+    <h2 class="title">Nuwara Eliya District & Divisional Child Protection Contacts</h2>
+    <div class="grid">
+
+      <!-- 1 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">1</span><h3 class="name">Mr. H. G. J. Harendra</h3></div>
+        <p class="designation">District Child Protection Officer</p>
+        <p class="district">Nuwara Eliya</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905012</span></div>
+          <div><span class="label">Email</span><span>nuwaraeliya.dcpo.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905012">Call</a>
+          <a class="btn email" href="mailto:nuwaraeliya.dcpo.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">2</span><h3 class="name">—</h3></div>
+        <p class="designation">District Psychosocial Officer</p>
+        <p class="district">Nuwara Eliya</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>Not available</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <span class="btn call" aria-disabled="true">Call</span>
+          <span class="btn email" aria-disabled="true">Email</span>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">3</span><h3 class="name">Mr. W. G. Nihal Shantha</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Ambagomuwa</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905135</span></div>
+          <div><span class="label">Email</span><span>ambagamuwakorale.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905135">Call</a>
+          <a class="btn email" href="mailto:ambagamuwakorale.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">5</span><h3 class="name">Mrs. D. M. N. P. Dissanayake</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Hanguranketha</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>071-7771356</span></div>
+          <div><span class="label">Email</span><span>hanguranketha.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94717771356">Call</a>
+          <a class="btn email" href="mailto:hanguranketha.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">6</span><h3 class="name">Mrs. D. M. S. I. Manike</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Kotmale</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905133</span></div>
+          <div><span class="label">Email</span><span>kothmale.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905133">Call</a>
+          <a class="btn email" href="mailto:kothmale.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">7</span><h3 class="name">—</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Nuwara Eliya</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>Not available</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <span class="btn call" aria-disabled="true">Call</span>
+          <span class="btn email" aria-disabled="true">Email</span>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">8</span><h3 class="name">Mrs. W. S. Wathsala</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Walapane</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905134</span></div>
+          <div><span class="label">Email</span><span>supipiwathsala10@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905134">Call</a>
+          <a class="btn email" href="mailto:supipiwathsala10@gmail.com">Email</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+  <!-- Matale District - wrap content only (no styles) -->
+  <div class="wrap">
+    <h2 class="title">Matale District & Divisional Child Protection Contacts</h2>
+    <div class="grid">
+
+      <!-- 1 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">1</span><h3 class="name">Mrs. D. N. P. Hemantha</h3></div>
+        <p class="designation">District Child Protection Officer</p>
+        <p class="district">Matale</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905009</span></div>
+          <div><span class="label">Email</span><span>matale.dcpo.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905009">Call</a>
+          <a class="btn email" href="mailto:matale.dcpo.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">2</span><h3 class="name">Mrs. K. A. W. A. K. Kohona</h3></div>
+        <p class="designation">District Psychosocial Officer</p>
+        <p class="district">Matale</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905014</span></div>
+          <div><span class="label">Email</span><span>mathale.dpso.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905014">Call</a>
+          <a class="btn email" href="mailto:mathale.dpso.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">3</span><h3 class="name">Mrs. S. K. D. M. Perera</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Ambangangakorale</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905139</span></div>
+          <div><span class="label">Email</span><span>ambangangakorale.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905139">Call</a>
+          <a class="btn email" href="mailto:ambangangakorale.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">4</span><h3 class="name">Mr. S. P. S. A. Senerath</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Dambulla</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905138</span></div>
+          <div><span class="label">Email</span><span>galewela.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905138">Call</a>
+          <a class="btn email" href="mailto:galewela.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">5</span><h3 class="name">Mr. G. G. I. Bandara</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Galewela</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905143</span></div>
+          <div><span class="label">Email</span><span>laggala.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905143">Call</a>
+          <a class="btn email" href="mailto:laggala.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">6</span><h3 class="name">S. K. D. M. Perera</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Matale</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905139</span></div>
+          <div><span class="label">Email</span><span>matale.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905139">Call</a>
+          <a class="btn email" href="mailto:matale.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">7</span><h3 class="name">S. C. J. De Silva</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Naula</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905137</span></div>
+          <div><span class="label">Email</span><span>naula.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905137">Call</a>
+          <a class="btn email" href="mailto:naula.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">8</span><h3 class="name">Mrs. D. P. S. H. Dissanayake</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Pallepola</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905142</span></div>
+          <div><span class="label">Email</span><span>pallepola.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905142">Call</a>
+          <a class="btn email" href="mailto:pallepola.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 9 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">9</span><h3 class="name">—</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Rattota</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>Not available</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <span class="btn call" aria-disabled="true">Call</span>
+          <span class="btn email" aria-disabled="true">Email</span>
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">10</span><h3 class="name">—</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Ukuwela</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>Not available</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <span class="btn call" aria-disabled="true">Call</span>
+          <span class="btn email" aria-disabled="true">Email</span>
+        </div>
+      </article>
+
+      <!-- 11 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">11</span><h3 class="name">—</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Wilgamuwa</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>Not available</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <span class="btn call" aria-disabled="true">Call</span>
+          <span class="btn email" aria-disabled="true">Email</span>
+        </div>
+      </article>
+
+      <!-- 12 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">12</span><h3 class="name">Mr. W. G. B. Sri Lasantha Premarathna</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Yatawatta</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>Not available</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <span class="btn call" aria-disabled="true">Call</span>
+          <span class="btn email" aria-disabled="true">Email</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+<!-- Kandy District - wrap content only (no styles) -->
+  <div class="wrap">
+    <h2 class="title">Kandy District & Divisional Child Protection Contacts</h2>
+    <div class="grid">
+
+      <!-- 1 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">1</span><h3 class="name">Mrs. M. V. S. Munasingha</h3></div>
+        <p class="designation">District Child Protection Officer</p>
+        <p class="district">Kandy</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905013</span></div>
+          <div><span class="label">Email</span><span>kandy.dcpo.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905013">Call</a>
+          <a class="btn email" href="mailto:kandy.dcpo.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">2</span><h3 class="name">Mrs. S. K. Abeygunasekara</h3></div>
+        <p class="designation">District Psychosocial Officer</p>
+        <p class="district">Kandy</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905011</span></div>
+          <div><span class="label">Email</span><span>kandy.dpso.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905011">Call</a>
+          <a class="btn email" href="mailto:kandy.dpso.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">3</span><h3 class="name">Mr. Nalaka Rathnayaka</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Udunuwara</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905120</span></div>
+          <div><span class="label">Email</span><span>udunuwara.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905120">Call</a>
+          <a class="btn email" href="mailto:udunuwara.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">4</span><h3 class="name">Mr. M. S. I. B. Gunathunga</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Yatinuwara</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>071-3955856</span></div>
+          <div><span class="label">Email</span><span>yatinuwara.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94713955856">Call</a>
+          <a class="btn email" href="mailto:yatinuwara.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">5</span><h3 class="name">Mrs. W. P. M. Warshage</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Udapalatha</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-7489567</span></div>
+          <div><span class="label">Email</span><span>udapalatha.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94767489567">Call</a>
+          <a class="btn email" href="mailto:udapalatha.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">6</span><h3 class="name">Mr. Lasantha Kumara</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Poojapitiya</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>071-1951673</span></div>
+          <div><span class="label">Email</span><span>poojapitiya.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94711951673">Call</a>
+          <a class="btn email" href="mailto:poojapitiya.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">7</span><h3 class="name">Mr. Ravindra Kumara</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Akurana</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>071-8652168</span></div>
+          <div><span class="label">Email</span><span>akurana.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94718652168">Call</a>
+          <a class="btn email" href="mailto:akurana.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">8</span><h3 class="name">—</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Delthota</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>Not available</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <span class="btn call" aria-disabled="true">Call</span>
+          <span class="btn email" aria-disabled="true">Email</span>
+        </div>
+      </article>
+
+      <!-- 9 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">9</span><h3 class="name">Mrs. W. P. M. Warshage</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Doluwa</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905124</span></div>
+          <div><span class="label">Email</span><span>doluwa.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905124">Call</a>
+          <a class="btn email" href="mailto:doluwa.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">10</span><h3 class="name">Mrs. C. M. N. D. K. Chandrasekara</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Gagaihalakorale</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905130</span></div>
+          <div><span class="label">Email</span><span>gangaihala.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905130">Call</a>
+          <a class="btn email" href="mailto:gangaihala.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 11 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">11</span><h3 class="name">Mrs. A. A. R. Kumari</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Galagedara</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905214</span></div>
+          <div><span class="label">Email</span><span>galagedara.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905214">Call</a>
+          <a class="btn email" href="mailto:galagedara.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 12 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">12</span><h3 class="name">Mrs. S. K. K. Aththanayake</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Gangawatakorale</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905119</span></div>
+          <div><span class="label">Email</span><span>gangawatakorale.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905119">Call</a>
+          <a class="btn email" href="mailto:gangawatakorale.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 13 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">13</span><h3 class="name">—</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Harispaththuwa</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>Not available</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <span class="btn call" aria-disabled="true">Call</span>
+          <span class="btn email" aria-disabled="true">Email</span>
+        </div>
+      </article>
+
+      <!-- 14 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">14</span><h3 class="name">Mrs. P. D. W. M. Dissanayaka</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Hatharaliyedda</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905155</span></div>
+          <div><span class="label">Email</span><span>hatharaliyadda.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905155">Call</a>
+          <a class="btn email" href="mailto:hatharaliyadda.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 15 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">15</span><h3 class="name">Mrs. W. G. S. Kumari</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Kundasale</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905128</span></div>
+          <div><span class="label">Email</span><span>kundasale.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905128">Call</a>
+          <a class="btn email" href="mailto:kundasale.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 16 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">16</span><h3 class="name">Mr. D. U. G. D. K. C. Thilakarathne</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Madadumbara</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905127</span></div>
+          <div><span class="label">Email</span><span>medadumbara.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905127">Call</a>
+          <a class="btn email" href="mailto:medadumbara.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 17 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">17</span><h3 class="name">Mr. S. M. D. P. K. Samarakoone</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Minipe</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905125</span></div>
+          <div><span class="label">Email</span><span>minipe.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905125">Call</a>
+          <a class="btn email" href="mailto:minipe.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 18 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">18</span><h3 class="name">—</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Pahaththewahata</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>Not available</span></div>
+          <div><span class="label">Email</span><span>Not available</span></div>
+        </div>
+        <div class="actions">
+          <span class="btn call" aria-disabled="true">Call</span>
+          <span class="btn email" aria-disabled="true">Email</span>
+        </div>
+      </article>
+
+      <!-- 19 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">19</span><h3 class="name">Mrs. A. I. Senevirathne</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Panvila</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905144</span></div>
+          <div><span class="label">Email</span><span>panvila.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905144">Call</a>
+          <a class="btn email" href="mailto:panvila.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 20 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">20</span><h3 class="name">Mrs. K. P. H. A. Somarathne</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Pasbagekorale</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>076-9905122</span></div>
+          <div><span class="label">Email</span><span>pasbagekorale.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94769905122">Call</a>
+          <a class="btn email" href="mailto:pasbagekorale.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+      <!-- 21 -->
+      <article class="card">
+        <div class="row-top"><span class="idx">21</span><h3 class="name">Mr. H. A. Rohan Thilakarathna</h3></div>
+        <p class="designation">Divisional Child Protection Officer</p>
+        <p class="district">Pathadumbara</p>
+        <div class="meta">
+          <div><span class="label">Phone</span><span>070-5196620</span></div>
+          <div><span class="label">Email</span><span>pathadumbara.ncpa@gmail.com</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn call" href="tel:+94705196620">Call</a>
+          <a class="btn email" href="mailto:pathadumbara.ncpa@gmail.com">Email</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+</body>
+</html>
